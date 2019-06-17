@@ -1,4 +1,4 @@
-## Interface: 11302
+## Interface: 11200
 ## Title: QuestFrameFixer
 ## Version: 1.0
 ## LoadOnDemand: 0

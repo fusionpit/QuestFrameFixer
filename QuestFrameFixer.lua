@@ -1,8 +1,11 @@
-hooksecurefunc("QuestFrameGreetingPanel_OnShow", function()
+local oldOnShow = QuestFrameGreetingPanel_OnShow;
+QuestFrameGreetingPanel_OnShow = function()
+    oldOnShow();
+    
     for i = 1, MAX_NUM_QUESTS do
-        local titleLine = _G["QuestTitleButton"..i];
+        local titleLine = getglobal("QuestTitleButton"..i);
         if (titleLine:IsVisible()) then
-            local bulletPointTexture = _G[titleLine:GetName().."QuestIcon"];
+            local bulletPointTexture = titleLine:GetRegions();
             if (titleLine.isActive == 1) then
                 bulletPointTexture:SetTexture("Interface\\GossipFrame\\ActiveQuestIcon");
             else
@@ -10,4 +13,4 @@ hooksecurefunc("QuestFrameGreetingPanel_OnShow", function()
             end
         end
     end
-end)
+end
