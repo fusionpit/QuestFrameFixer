@@ -4,4 +4,4 @@ To Quote Kaivax on the official Blizzard forums,
 
 And I think that's weak as hell.  So, this addon will fix that inconsistency:
 
-![alt text](https://imgur.com/cZ9dvJH "Fixed Quest Giver Icons")
+![Fixed Quest Giver Icons](https://i.imgur.com/cZ9dvJH.png "Fixed Quest Giver Icons")
