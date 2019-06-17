@@ -1,4 +1,4 @@
-hooksecurefunc("QuestFrameGreetingPanel_OnShow", function()
+QuestFrameProgressPanel:HookScript("OnShow", function()
     for i = 1, MAX_NUM_QUESTS do
         local titleLine = _G["QuestTitleButton"..i];
         if (titleLine:IsVisible()) then
