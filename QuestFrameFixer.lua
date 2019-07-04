@@ -1,3 +1,7 @@
+local _G = _G
+local GetFileIDFromPath = GetFileIDFromPath
+local MAX_NUM_QUESTS = MAX_NUM_QUESTS
+
 QuestFrameGreetingPanel:HookScript(
     "OnShow",
     function()
