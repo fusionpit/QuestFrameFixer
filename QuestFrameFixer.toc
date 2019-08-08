@@ -1,8 +1,10 @@
 ## Interface: 11302
 ## Title: QuestFrameFixer
-## Version: 1.0
+## Version: @project-version@
 ## LoadOnDemand: 0
 ## Author: Sveng
 ## Notes: Fixes the icons on the Quest Frame to be ? or ! instead of a dot
+## X-Curse-Project-ID: 324527
+## X-WoWI-ID: 25022
 
 QuestFrameFixer.lua
