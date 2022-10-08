@@ -1,9 +1,9 @@
-## Interface: 11302
+## Interface: 30400
 ## Title: QuestFrameFixer
 ## Version: @project-version@
 ## LoadOnDemand: 0
 ## Author: Sveng
-## Notes: Fixes the icons on the Quest Frame to be ? or ! instead of a dot
+## Notes: Fixes the icons on the Quest Frame to be blue ? or ! for repeatable and daily quests
 ## X-Curse-Project-ID: 324527
 ## X-WoWI-ID: 25022
 
