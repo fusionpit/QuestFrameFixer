@@ -1,7 +1,10 @@
 # QuestFrameFixer
-To Quote Kaivax on the official Blizzard forums,
-> NPCs which offer multiple quests may inconsistently display them as a dot or a “!” on the available quests list. They were inconsistent in 1.12, and we’ve reproduced the exact inconsistency they had back then.
 
-And I think that's weak as hell.  So, this addon will fix that inconsistency:
+In Wrath of the Lich King Classic, this addon will make repeatable quests appear as blue ? icons, while daily quests will appear as blue ! icons.
+
+![Updated Repeatable Quest Icons](https://i.imgur.com/xBlBCgd.png "Updated Repeatable Quest Icons")
+![Updated Daily Quest Icons](https://i.imgur.com/QBGAUjc.png "Updated Daily Quest Icons")
+
+In Classic Era, this addon will change the dot icons some quest givers have with yellow ! and ? icons.
 
 ![Fixed Quest Giver Icons](https://i.imgur.com/cZ9dvJH.png "Fixed Quest Giver Icons")
