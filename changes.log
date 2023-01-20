@@ -1,3 +1,6 @@
+* 2.1
+    - Fix gossip frame hooks after blizz's refactor of that frame
+
 * 2.0
     - Wrath support
         - Repeatable quests are marked with a blue ?
