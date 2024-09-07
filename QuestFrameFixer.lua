@@ -1,18 +1,30 @@
-local DAILY_AVAILABLE_QUEST_ICON_FILEID = GetFileIDFromPath("Interface\\GossipFrame\\DailyQuestIcon")
-local REPEAT_QUEST_ICON_FILEID = GetFileIDFromPath("Interface\\GossipFrame\\DailyActiveQuestIcon")
+local _G = _G
+local tinsert = tinsert
+local GetFileIDFromPath = GetFileIDFromPath
+local MAX_NUM_QUESTS = MAX_NUM_QUESTS
 
-local oldAvailableSetup = GossipAvailableQuestButtonMixin.Setup
-function GossipAvailableQuestButtonMixin:Setup(...)
-    oldAvailableSetup(self, ...)
-    if self.GetElementData ~= nil then
-        local info = self.GetElementData().info
-        if info == nil then return end
-        local freq = info.frequency
-        local isRepeatable = info.repeatable
-        if isRepeatable then
-            self.Icon:SetTexture(REPEAT_QUEST_ICON_FILEID)
-        elseif (freq == 1) then
-            self.Icon:SetTexture(DAILY_AVAILABLE_QUEST_ICON_FILEID)
+local ACTIVE_QUEST_ICON_FILEID = GetFileIDFromPath("Interface\\GossipFrame\\ActiveQuestIcon")
+local AVAILABLE_QUEST_ICON_FILEID = GetFileIDFromPath("Interface\\GossipFrame\\AvailableQuestIcon")
+
+local titleLines = {}
+local questIconTextures = {}
+for i = 1, MAX_NUM_QUESTS do
+    local titleLine = _G["QuestTitleButton" .. i]
+    tinsert(titleLines, titleLine)
+    tinsert(questIconTextures, _G[titleLine:GetName() .. "QuestIcon"])
+end
+QuestFrameGreetingPanel:HookScript(
+    "OnShow",
+    function()
+        for i, titleLine in ipairs(titleLines) do
+            if (titleLine:IsVisible()) then
+                local bulletPointTexture = questIconTextures[i]
+                if (titleLine.isActive == 1) then
+                    bulletPointTexture:SetTexture(ACTIVE_QUEST_ICON_FILEID)
+                else
+                    bulletPointTexture:SetTexture(AVAILABLE_QUEST_ICON_FILEID)
+                end
+            end
         end
     end
-end
+)
