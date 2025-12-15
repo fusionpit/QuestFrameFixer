@@ -1,4 +1,4 @@
-## Interface: 11507
+## Interface: 11508
 ## Title: QuestFrameFixer
 ## Version: @project-version@
 ## LoadOnDemand: 0
