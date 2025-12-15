@@ -1,0 +1,10 @@
+## Interface: 20505
+## Title: QuestFrameFixer
+## Version: @project-version@
+## LoadOnDemand: 0
+## Author: Sveng
+## Notes: Fixes the icons on the Quest Frame to be the correct color for the quest type
+## X-Curse-Project-ID: 324527
+## X-WoWI-ID: 25022
+
+QuestFrameFixer.lua
