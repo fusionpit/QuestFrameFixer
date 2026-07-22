@@ -1,9 +1,20 @@
-## Interface: 11508
+## Interface: 11509
 ## Title: QuestFrameFixer
 ## Version: @project-version@
 ## LoadOnDemand: 0
 ## Author: Sveng
 ## Notes: Fixes the icons on the Quest Frame to be ? or ! instead of a dot
+## Category: User Interface
+## Category-deDE: Benutzerinterface
+## Category-esES: Interfaz de usuario
+## Category-esMX: Interfaz de usuario
+## Category-frFR: Interface utilisateur
+## Category-itIT: Interfaccia utente
+## Category-koKR: 사용자 인터페이스
+## Category-ptBR: Interface do usuário
+## Category-ruRU: Интерфейс пользователя
+## Category-zhCN: 用户界面
+## Category-zhTW: 使用者介面
 ## X-Curse-Project-ID: 324527
 ## X-WoWI-ID: 25022
 
